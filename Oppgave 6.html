@@ -1,0 +1,45 @@
+<!doctype HTML>
+<head>
+	<title>Test</title>
+	<meta charset="utf-8" />
+	<script>
+
+		window.onload = oppstart;
+        var antall = 0;
+
+		function oppstart() {
+
+			document.getElementById("btnLeggTil").onclick = leggTil;
+			document.getElementById("btnTomListe").onclick = tomListe;
+
+		}
+
+		function leggTil() {
+			var varer = document.getElementById("txtNavn").value;
+
+			document.getElementById("liste").innerHTML = document.getElementById("liste").innerHTML + "<li>"+ varer +"</li>";
+            document.getElementById("txtNavn").value = "";
+		}
+
+         function tomListe() {
+ 			document.getElementById("liste").innerHTML = "";
+ 		}
+
+    </script>
+</head>
+<body>
+
+	<input type="text" id="txtNavn" />
+	<button type="button" id="btnLeggTil">Legg til vare</button>
+    <h1>Handleliste:</h1>
+
+    <ol id="liste">
+    <h5>NR NAVN</h5>
+
+	</ol>
+        <br>
+    Total ant. varer:        Navn på vare:
+
+    <button type="button" id="btnTomListe">Tøm listen</button>
+
+</body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Oppgave 4</title>
+        <script>
+            window.onclick = oppstart;
+            var x = document.URL;
+
+
+            function oppstart(){
+                document.getElementById("btn0").onclick = trykket0;
+                document.getElementById("btn1").onclick = trykket1;
+                document.getElementById("btn2").onclick = trykket2;
+                document.getElementById("btn3").onclick = trykket3;
+                document.getElementById("btn4").onclick = trykket4;
+                document.getElementById("btn5").onclick = trykket5;
+                document.getElementById("btn6").onclick = trykket6;
+                document.getElementById("btn7").onclick = trykket7;
+                document.getElementById("btn8").onclick = trykket8;
+                document.getElementById("btn9").onclick = trykket9;
+            }
+            /* 	function leggTil() {
+        			var navn = document.getElementById("txtNavn").value;
+
+        			document.getElementById("liste").innerHTML = document.getElementById("liste").innerHTML + "<li>"+ navn +"</li>";
+
+        			document.getElementById("txtNavn").value = "";
+            */
+
+            function trykket0(){
+                var b = document.getElementById("btn0").innerHTML = "0";
+                document.getElementById("Utskrift").innerHTML = b;
+            }
+            function trykket1(){
+                var a = document.getElementById('btn1').innerHTML = "1";
+                a = a ;
+                document.getElementById("Utskrift").innerHTML = a;
+            }
+            function trykket2(){
+                document.getElementById("Utskrift").value;
+            }
+            function trykket3(){
+                document.getElementById("Utskrift").value;
+            }
+            function trykket4(){
+                document.getElementById("Utskrift").value ;
+            }
+            function trykket5(){
+                document.getElementById("Utskrift").value;
+            }
+            function trykket6(){
+                document.getElementById("Utskrift").value;
+            }
+            function trykket7(){
+                document.getElementById("Utskrift").value;
+            }
+            function trykket8(){
+                document.getElementById("Utskrift").value;
+            }
+            function trykket9(){
+                document.getElementById("Utskrift").value;
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+
+            <ol id="Utskrift"></ol>
+
+
+            <input type="button" id="btn1" value="1"></input>
+            <button type="button" id="btn2" value="2">2</button>
+            <button type="button" id="btn3" value="3">3</button>
+                <br>
+            <button type="button" id="btn4" value="4">4</button>
+            <button type="button" id="btn5" value="5">5</button>
+            <button type="button" id="btn6" value="6">6</button>
+                <br>
+            <button type="button" id="btn7" value="7">7</button>
+            <button type="button" id="btn8" value="8">8</button>
+            <button type="button" id="btn9"value="9">9</button>
+                <br>
+            <input type="button" id="btn0" value="0"></input>
+
+
+
+    </body>
+    </html>
